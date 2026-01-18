@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Message Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>Message Box</h2>
+
+        <div class="dark-toggle">
+            <span>Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="darkToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+
+        <form id="messageForm">
+            <textarea id="message" placeholder="Type your message here..."></textarea>
+
+            <div class="info">
+                <span id="counter">0 / 200 characters</span>
+                <span id="warning"></span>
+            </div>
+
+            <button type="submit" id="submitBtn" disabled>Submit</button>
+        </form>
+
+        <p id="successMsg"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
